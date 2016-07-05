@@ -1,0 +1,183 @@
+/**
+ * Règles de typographie pour les articles
+ */
+
+$font-default : 'avantgarde', sans-serif;
+
+
+h1 {
+	font: 40px/65px $font-default;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: $white;
+	margin: 0;
+
+	-moz-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	-webkit-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	-o-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+}
+
+
+
+@include media(gt-mobile){
+	h1 {
+		font-size: 100px;
+		line-height: 120px;
+	}
+}
+
+
+h2 {
+	font: 20px/31px $font-default;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $white;
+	margin: 0;
+	text-align: left;
+
+	-moz-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	-webkit-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	-o-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+}
+
+@include media(gt-mobile){
+	h2 {
+		font-size: 25px;
+	}
+}
+
+h3 {
+	font: 20px/26px $font-default;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $white;
+	margin: 0;
+	text-align: right;
+
+	-moz-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	-webkit-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	-o-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+
+}
+
+@include media(gt-mobile){
+	h3 {
+		font-size: 25px;
+	}
+}
+
+.title {
+	font: 15px/20px $font-default;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: $black;
+	text-transform: uppercase;
+	margin-bottom : 20px;
+	text-align: left;
+
+	b {
+		font-size: 45px;
+		line-height: 60px;
+		display: block;
+	}
+}
+
+.title ~ p {
+	margin-left: 15px;
+	text-align: left;
+}
+
+@include media(gt-mobile){
+
+	.title {
+	font: 25px/32px $font-default;
+	float: left;
+
+	b {
+		font-size: 70px;
+		line-height: 90px;
+	}
+}
+
+	.title ~ p {
+		margin-left: 285px;
+		padding-top: 50px;
+		width: 350px;
+
+	}
+}
+
+
+h4{
+	font: 10px $font-default;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color:$white;
+	margin: 0;
+	padding-top: 5px;
+
+	-moz-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	-webkit-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	-o-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+}
+
+@include media(gt-mobile){
+	h4{
+		font: 15px $font-default;
+	}
+}
+
+
+h5{
+	font: 35px/45px $font-default;
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color:$white;
+	margin: 0;
+	padding: 25px 0;
+
+	-moz-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	-webkit-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	-o-text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+	text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+}
+
+@include media(gt-mobile){
+
+	h5 {
+		font: 75px/80px $font-default;
+	}
+}
+
+p {
+	font: 14px/21px $font-default;
+	font-weight: bold;
+	color: $black;
+	margin: 0;
+
+
+	em{
+
+	}
+
+	strong{
+
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover{
+}
+

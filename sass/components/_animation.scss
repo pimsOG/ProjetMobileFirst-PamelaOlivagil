@@ -1,0 +1,9 @@
+// Paramètres d'animation
+
+$animate-default: all .5s ease;
+$animate-slow:    all  1s ease;
+$animate-fast:    all .3s ease;
+
+:hover{
+    transition: $animate-default;
+}

@@ -1,0 +1,70 @@
+@import "compass/css3";
+
+// Library
+@import "library/mixins";
+@import "library/normalize";
+@import "library/grid";
+@import "library/responsive";
+@import "library/fonts";
+@import "library/owl.carousel";
+@import "library/animate";
+@import "library/jquery.countdown";
+
+
+// Components
+@import "components/colors";
+@import "components/typography";
+@import "components/animation";
+@import "components/buttons";
+@import "components/forms";
+@import "components/gallery";
+
+
+// Section
+@import "sections/main";
+
+// Section
+
+
+// Grille
+$columns: 12;
+$column-width: 60;
+$gutter-width: 20;
+$total-width: 100%;
+$container-width: 1600px;
+$inner-width: 1200px;
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #FFF;
+  height:100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

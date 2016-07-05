@@ -1,0 +1,67 @@
+/*
+Formulaires
+*/
+
+
+
+// WebKit, Blink, Edge
+::-webkit-input-placeholder {
+    color: #999;
+}
+
+// Mozilla Firefox 4 to 18
+:-moz-placeholder {
+   color: #999;
+   opacity:  1;
+}
+
+// Mozilla Firefox 19+
+::-moz-placeholder {
+   color: #999;
+   opacity: 1;
+}
+
+// Internet Explorer 10-11
+:-ms-input-placeholder {
+   color: #999;
+}
+
+
+
+/**
+ * Champs de saisie
+ */
+
+form {
+  text-align: center;
+}
+
+input, textarea {
+    width: 80%;
+    border: 1px solid $blue;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 2px;
+    text-align: left;
+}
+
+textarea {
+      min-height: 300px;
+}
+
+input.button {
+    color:$white;
+    text-transform: uppercase;
+    border: none;
+    width: initial;
+}
+
+@include media(gt-mobile){
+
+  form {
+    clear: both;
+  }
+    input, textarea {
+      width: 450px;
+    }
+}

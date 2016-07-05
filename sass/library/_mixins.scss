@@ -1,0 +1,40 @@
+/*
+# Mixins
+
+Fonctions et utilitaires Sass*/
+
+
+/*
+# clearfix()
+
+The micro clearfix : rétablir la mise en page après des floats notamment
+
+*/
+
+@mixin clearfix() {
+	*zoom: 1;
+
+	&:before,
+	&:after {
+	    content: "";
+	    display: table;
+	}
+	&:after {
+	    clear: both;
+	}
+}
+
+
+@mixin hide () {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+@mixin transition($transition) {
+	body.loaded & {
+		-webkit-transition: $transition;
+		-o-transition: $transition;
+		transition: $transition;
+	}
+}

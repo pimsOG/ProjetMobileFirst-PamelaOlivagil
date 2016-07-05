@@ -1,0 +1,69 @@
+/**
+ * Grid System
+ * Basé sur Semantic.gs
+ */
+
+
+//
+// Valeurs par défaut
+//
+
+$container-width: 1500px !default;
+$inner-width: 1000px !default;
+$column-width: 60px;
+$gutter-width: 20px;
+$columns: 12;
+
+
+
+//
+// Containers
+//
+
+@mixin container {
+	@include clearfix;
+	margin: 0 auto;
+	max-width: $container-width;
+
+}
+
+@mixin inner {
+	@include clearfix;
+	margin: 0 auto;
+	max-width: $inner-width;
+}
+
+
+
+//
+// Système de grille
+//
+
+// Utility function — you should never need to modify this
+@function gridsystem-width($columns:$columns) {
+	@return ($column-width * $columns) + ($gutter-width * $columns);
+}
+
+$total-width: gridsystem-width($columns);
+
+
+body {
+	width: 100%;
+	@include clearfix();
+}
+
+@mixin row($columns:$columns) {
+	display: block;
+	width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns));
+	margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1);
+	@include clearfix();
+}
+@mixin column($x,$columns:$columns) {
+	display: inline;
+	float:left;
+	width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns));
+	margin-left: $total-width*(($gutter-width*.5)/gridsystem-width($columns));
+	margin-right: $total-width*(($gutter-width*.5)/gridsystem-width($columns));
+}
+
+
